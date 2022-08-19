@@ -1,0 +1,92 @@
+.home-page {
+  max-width: 1200px;
+  margin: 50px auto;
+
+  .dropzone-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and(max-width: 1024px) {
+      display: block;
+    }
+
+    .dropzone {
+      background: $white;
+      color: $color-1;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      cursor: pointer;
+      border: 2px solid $color-2;
+      border-radius: 20px;
+      outline: none;
+
+      @media screen and(max-width: 1024px) {
+        margin: 30px auto;
+      }
+    }
+
+    .dropzoneReject {
+      border: 5px solid red;
+    }
+    .dropzoneAccept {
+      border: 5px solid green;
+    }
+  }
+
+  .user-form {
+    margin: 50px auto;
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      border: none;
+      background: $color-4;
+      width: 900px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 20px;
+
+      @media screen and(max-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 400px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: 15px;
+
+        input {
+          width: 200px;
+          padding: 14px 20px;
+          margin: 0;
+          font-size: 1.2rem;
+          font-family: $font-2;
+          border-radius: 20px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .div-submit {
+        margin-top: 20px;
+        grid-column: 2 / span 2;
+        margin-bottom: 0px;
+
+        @media screen and(max-width: 1024px) {
+          grid-column: 1 / span 1;
+        }
+      }
+    }
+  }
+}

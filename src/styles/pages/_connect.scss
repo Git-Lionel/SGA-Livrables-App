@@ -1,0 +1,54 @@
+.connection-page {
+  margin: 80px auto;
+  max-width: 1200px;
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+
+  @media screen and(max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+
+  .connection-form {
+    border: none;
+    background: $color-4;
+    width: 490px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+
+    form {
+      input {
+        padding: 14px 20px;
+        margin: 0;
+        font-size: 1.2rem;
+        font-family: $font-2;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .img-container {
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      padding: 10px;
+      text-align: center;
+      line-height: 3rem;
+    }
+
+    img {
+      padding: 10px;
+      margin: auto;
+      max-width: 90%;
+
+      @media screen and(max-width: 1024px) {
+        width: 490px;
+      }
+    }
+  }
+}
